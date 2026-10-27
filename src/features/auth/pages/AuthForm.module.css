@@ -1,0 +1,97 @@
+/* Shared form layout for the auth pages. */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.inlineLink {
+  color: var(--color-primary-strong);
+  font-weight: var(--font-weight-black);
+}
+
+.labelLink {
+  color: var(--color-primary-strong);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+}
+
+.submit {
+  margin-block-start: var(--space-2);
+}
+
+@media (min-width: 48rem) {
+  .pageTitle {
+    font-size: var(--font-size-5xl);
+  }
+}
+
+.codeInput {
+  font-size: var(--font-size-xl);
+  letter-spacing: 0.4em;
+  text-align: center;
+}
+
+.accountType {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  border: 2px solid var(--color-primary);
+  border-radius: var(--radius-card);
+  background: var(--color-primary-soft);
+  color: var(--color-primary-soft-text);
+}
+
+.accountTypeIcon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  inline-size: 3rem;
+  block-size: 3rem;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  color: var(--color-primary-strong);
+}
+
+.accountTypeIcon svg {
+  inline-size: 1.5rem;
+  block-size: 1.5rem;
+}
+
+.accountTypeName {
+  font-weight: var(--font-weight-black);
+}
+
+.accountTypeHint {
+  font-size: var(--font-size-xs);
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-5);
+  text-align: center;
+}
+
+.successIcon {
+  display: grid;
+  place-items: center;
+  inline-size: 5rem;
+  block-size: 5rem;
+  border-radius: var(--radius-pill);
+  background: var(--color-success-soft);
+  color: var(--color-success-strong);
+}
+
+.successIcon svg {
+  inline-size: 2.5rem;
+  block-size: 2.5rem;
+}

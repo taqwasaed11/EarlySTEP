@@ -1,0 +1,86 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  inline-size: 100%;
+  max-inline-size: var(--layout-auth-max-width);
+}
+
+.wide {
+  max-inline-size: 36rem;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: var(--space-2);
+  min-block-size: var(--tap-target-min);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  text-decoration: none;
+}
+
+.backLink:hover {
+  color: var(--color-text-primary);
+}
+
+.backLink svg {
+  inline-size: 1rem;
+  block-size: 1rem;
+}
+
+.card {
+  padding: var(--space-6);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-raised);
+  animation: card-in var(--duration-base) var(--ease-standard);
+}
+
+@media (min-width: 40rem) {
+  .card {
+    padding: var(--space-10);
+  }
+}
+
+.brand {
+  display: flex;
+  justify-content: center;
+  margin-block-end: var(--space-8);
+}
+
+.brandLink {
+  border-radius: var(--radius-card);
+  text-decoration: none;
+}
+
+.header {
+  margin-block-end: var(--space-8);
+  text-align: center;
+}
+
+.title {
+  font-size: var(--font-size-3xl);
+}
+
+.subtitle {
+  margin-block-start: var(--space-3);
+  color: var(--color-text-secondary);
+}
+
+.footer {
+  margin-block-start: var(--space-8);
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-medium);
+  text-align: center;
+}
+
+@keyframes card-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+}
